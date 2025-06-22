@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { piiCategories, typeColors } from '../data/piiCategories';
 import type { Annotation, UserAnnotation } from '../types';
 
@@ -26,6 +26,13 @@ const AnnotationMarker: React.FC<AnnotationMarkerProps> = ({
 }) => {
   const [selection, setSelection] = useState<{ start: number, end: number, text: string } | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<string>('');
+  const [showOverlapWarning, setShowOverlapWarning] = useState(true);
+  const [overlappingAnnotations, setOverlappingAnnotations] = useState<{current: UserAnnotation, previous: UserAnnotation} | null>(null);
+
+  // Reset overlap warning when annotations change
+  useEffect(() => {
+    setShowOverlapWarning(true);
+  }, [annotations.length]);
 
   // Ομαδοποίηση κατηγοριών ανά τύπο
   const categoriesByType = {
@@ -94,12 +101,12 @@ const AnnotationMarker: React.FC<AnnotationMarkerProps> = ({
     for (let i = 1; i < sortedAnnotations.length; i++) {
       const current = sortedAnnotations[i];
       const previous = sortedAnnotations[i - 1];
-      
+
       // Έλεγχος για πραγματική επικάλυψη: η τρέχουσα αρχίζει πριν τελειώσει η προηγούμενη
       // Οι επισημάνσεις που ακουμπούν (previous.end === current.start) ΔΕΝ είναι επικάλυψη
-      if (current.start < previous.end) {
+      if (current.start < previous.end && showOverlapWarning) {
         return (
-          <div className="bg-gradient-to-r from-red-50 to-pink-50 dark:from-red-900/20 dark:to-pink-900/20 border-2 border-red-300 dark:border-red-600 rounded-xl p-6 text-center">
+          <div className="bg-gradient-to-r from-red-50 to-pink-50 dark:from-red-900/20 dark:to-pink-900/20 border-2 border-red-300 dark:border-red-600 rounded-xl p-6">
             <div className="flex items-center justify-center mb-3">
               <div className="p-2 rounded-lg bg-red-500 text-white mr-3">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -108,11 +115,33 @@ const AnnotationMarker: React.FC<AnnotationMarkerProps> = ({
               </div>
               <h4 className="text-lg font-bold text-red-800 dark:text-red-200">Σφάλμα Επισημάνσεων</h4>
             </div>
-            <p className="text-red-700 dark:text-red-300 leading-relaxed">
-              Υπάρχουν επικαλυπτόμενες επισημάνσεις. Παρακαλώ αφαιρέστε μία από αυτές πριν συνεχίσετε.
+            <p className="text-red-700 dark:text-red-300 leading-relaxed text-center mb-4">
+              Υπάρχουν επικαλυπτόμενες επισημάνσεις. Παρακαλώ επιλέξτε μία από τις παρακάτω επιλογές:
             </p>
-            <div className="mt-3 text-sm text-red-600 dark:text-red-400">
-              Επισήμανση "{previous.text}" (θέσεις {previous.start}-{previous.end}) επικαλύπτεται με "{current.text}" (θέσεις {current.start}-{current.end})
+            <div className="bg-red-100 dark:bg-red-900/30 rounded-lg p-3 mb-4 text-sm text-red-600 dark:text-red-400">
+              <strong>Επικάλυψη:</strong><br/>
+              • "{previous.text}" (θέσεις {previous.start}-{previous.end})<br/>
+              • "{current.text}" (θέσεις {current.start}-{current.end})
+            </div>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+              <button
+                onClick={() => onRemoveAnnotation(previous.id)}
+                className="px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded-lg transition-colors text-sm font-medium"
+              >
+                Αφαίρεση πρώτης επισήμανσης
+              </button>
+              <button
+                onClick={() => onRemoveAnnotation(current.id)}
+                className="px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded-lg transition-colors text-sm font-medium"
+              >
+                Αφαίρεση δεύτερης επισήμανσης
+              </button>
+              <button
+                onClick={() => setShowOverlapWarning(false)}
+                className="px-4 py-2 bg-gray-500 hover:bg-gray-600 text-white rounded-lg transition-colors text-sm font-medium"
+              >
+                Συνέχεια παρόλα αυτά
+              </button>
             </div>
           </div>
         );
