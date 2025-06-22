@@ -405,9 +405,9 @@ export const piiCategories: PIICategory[] = [
     nameEn: 'Meta Product Identifiers (Personal)',
     topic: 'products',
     type: 'direct',
-    description: 'Αναγνωριστικά που συνδέονται ρητά με τις μεταπλατφόρμες (προσωπικά)',
-    examples: ['Facebook username', 'Instagram ID', 'WhatsApp number'],
-    annotationRule: 'Μόνο το αναγνωριστικό, όχι links',
+    description: 'Αναγνωριστικά που συνδέονται ρητά με τις μεταπλατφόρμες: Meta Transaction IDs, Meta ονόματα χρηστών προϊόντων (Instagram, Oculus, Workplace), Install IDs, Meta Product Cookies, αναγνωριστικά σελίδας/ομάδας/μηνυμάτων. ΕΞΑΙΡΟΥΝΤΑΙ: Facebook ονόματα (→ ονόματα), WhatsApp αριθμοί (→ τηλέφωνο κινητό)',
+    examples: ['Instagram profile @user123', 'Meta OrderID #12345', 'Oculus username', 'Workplace employee ID', 'DATR cookie', 'Facebook Page ID', 'Thread ID', 'Message ID'],
+    annotationRule: 'Μόνο το αναγνωριστικό, όχι links. Facebook ονόματα → κατηγορία ονομάτων, WhatsApp αριθμοί → τηλέφωνο κινητό',
     whenToTag: 'always'
   },
   {
@@ -416,8 +416,8 @@ export const piiCategories: PIICategory[] = [
     nameEn: 'Meta Product Identifiers (Non-Personal)',
     topic: 'products',
     type: 'direct',
-    description: 'Αναγνωριστικά που συνδέονται ρητά με τις μεταπλατφόρμες (επιχειρηματικά)',
-    examples: ['support@meta.com', 'Meta business page'],
+    description: 'Επιχειρηματικά αναγνωριστικά που συνδέονται ρητά με τις μεταπλατφόρμες: Meta Transaction IDs, επιχειρηματικά ονόματα χρηστών προϊόντων, ταυτότητες χώρου εργασίας, Install IDs, Meta Product Cookies, αναγνωριστικά σελίδας/ομάδας',
+    examples: ['Meta business support@meta.com', 'Meta Business Page ID', 'Workplace Organization ID', 'Meta SubscriptionID', 'Business Install ID', 'TPID', 'Business DATR cookie'],
     annotationRule: 'Μόνο το αναγνωριστικό, όχι links',
     whenToTag: 'always'
   },
