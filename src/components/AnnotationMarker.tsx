@@ -27,7 +27,7 @@ const AnnotationMarker: React.FC<AnnotationMarkerProps> = ({
   const [selection, setSelection] = useState<{ start: number, end: number, text: string } | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<string>('');
   const [showOverlapWarning, setShowOverlapWarning] = useState(true);
-  const [overlappingAnnotations, setOverlappingAnnotations] = useState<{current: UserAnnotation, previous: UserAnnotation} | null>(null);
+  const [overlappingAnnotations, setOverlappingAnnotations] = useState<{ current: UserAnnotation, previous: UserAnnotation } | null>(null);
 
   // Reset overlap warning when annotations change
   useEffect(() => {
@@ -119,8 +119,8 @@ const AnnotationMarker: React.FC<AnnotationMarkerProps> = ({
               Υπάρχουν επικαλυπτόμενες επισημάνσεις. Παρακαλώ επιλέξτε μία από τις παρακάτω επιλογές:
             </p>
             <div className="bg-red-100 dark:bg-red-900/30 rounded-lg p-3 mb-4 text-sm text-red-600 dark:text-red-400">
-              <strong>Επικάλυψη:</strong><br/>
-              • "{previous.text}" (θέσεις {previous.start}-{previous.end})<br/>
+              <strong>Επικάλυψη:</strong><br />
+              • "{previous.text}" (θέσεις {previous.start}-{previous.end})<br />
               • "{current.text}" (θέσεις {current.start}-{current.end})
             </div>
             <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
