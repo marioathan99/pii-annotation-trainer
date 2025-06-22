@@ -14,7 +14,7 @@ A modern, interactive web application for training users to identify and annotat
 
 ## 🚀 Live Demo
 
-Visit the live application: [PII Annotation Trainer](https://YOUR_USERNAME.github.io/pii-annotation-trainer)
+Visit the live application: [PII Annotation Trainer](https://marioathan99.github.io/pii-annotation-trainer)
 
 ## 📱 Screenshots
 
