@@ -96,7 +96,8 @@ const AnnotationMarker: React.FC<AnnotationMarkerProps> = ({
       const previous = sortedAnnotations[i - 1];
       
       // Έλεγχος για πραγματική επικάλυψη: η τρέχουσα αρχίζει πριν τελειώσει η προηγούμενη
-      if (current.start < previous.end && current.start !== previous.end) {
+      // Οι επισημάνσεις που ακουμπούν (previous.end === current.start) ΔΕΝ είναι επικάλυψη
+      if (current.start < previous.end) {
         return (
           <div className="bg-gradient-to-r from-red-50 to-pink-50 dark:from-red-900/20 dark:to-pink-900/20 border-2 border-red-300 dark:border-red-600 rounded-xl p-6 text-center">
             <div className="flex items-center justify-center mb-3">
@@ -110,6 +111,9 @@ const AnnotationMarker: React.FC<AnnotationMarkerProps> = ({
             <p className="text-red-700 dark:text-red-300 leading-relaxed">
               Υπάρχουν επικαλυπτόμενες επισημάνσεις. Παρακαλώ αφαιρέστε μία από αυτές πριν συνεχίσετε.
             </p>
+            <div className="mt-3 text-sm text-red-600 dark:text-red-400">
+              Επισήμανση "{previous.text}" (θέσεις {previous.start}-{previous.end}) επικαλύπτεται με "{current.text}" (θέσεις {current.start}-{current.end})
+            </div>
           </div>
         );
       }
