@@ -504,9 +504,9 @@ export const piiCategories: PIICategory[] = [
     nameEn: 'Unique Device Identifier',
     topic: 'products',
     type: 'direct',
-    description: 'Συμβολοσειρά 24 χαρακτήρων που αποδίδεται σε όλες τις σύγχρονες συσκευές της Apple',
-    examples: ['12345678-123456789ABCDEF0'],
-    annotationRule: 'Ολόκληρο το UDID',
+    description: 'Μοναδικό αναγνωριστικό συσκευής Apple (UDID) ή άλλα μοναδικά αναγνωριστικά συσκευών',
+    examples: ['40A2298A-DA14-4B70-9A35-01C21371154F', '1234ABCD-5678-EFGH-9012-IJKLMNOPQRST'],
+    annotationRule: 'Ολόκληρο το αναγνωριστικό, συνήθως 36 χαρακτήρων με παύλες για Apple UDID',
     whenToTag: 'always'
   },
   {

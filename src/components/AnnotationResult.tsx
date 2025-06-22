@@ -41,7 +41,7 @@ const AnnotationResult: React.FC<AnnotationResultProps> = ({
     );
   });
   
-  // Εύρεση των λανθασμένων επισημάνσεων
+  // Εύρεση των λανθασμένων επισημάνσεων (μόνο αυτές που δεν ταιριάζουν με καμία σωστή)
   const incorrectAnnotations = userAnnotations.filter(ua => {
     return !correctAnnotations.some(ca => 
       ua.start === ca.start && ua.end === ca.end && ua.category === ca.category
@@ -52,17 +52,17 @@ const AnnotationResult: React.FC<AnnotationResultProps> = ({
   const scorePercentage = Math.round(f1Score * 100);
   
   return (
-    <div className="bg-white shadow-md rounded-lg p-6">
-      <h3 className="text-xl font-semibold mb-4">Αποτελέσματα Επισήμανσης</h3>
+    <div className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-6">
+      <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Αποτελέσματα Επισήμανσης</h3>
       
       <div className="mb-6">
         <div className="flex justify-between items-center mb-2">
-          <span className="text-gray-700">Ακρίβεια:</span>
-          <span className="font-semibold">{Math.round(precision * 100)}%</span>
+          <span className="text-gray-700 dark:text-gray-300">Ακρίβεια:</span>
+          <span className="font-semibold text-gray-900 dark:text-white">{Math.round(precision * 100)}%</span>
         </div>
-        <div className="w-full bg-gray-200 rounded-full h-2">
+        <div className="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2">
           <div 
-            className="bg-blue-600 h-2 rounded-full" 
+            className="bg-blue-600 dark:bg-blue-500 h-2 rounded-full" 
             style={{ width: `${Math.round(precision * 100)}%` }}
           ></div>
         </div>
@@ -70,12 +70,12 @@ const AnnotationResult: React.FC<AnnotationResultProps> = ({
       
       <div className="mb-6">
         <div className="flex justify-between items-center mb-2">
-          <span className="text-gray-700">Ανάκληση:</span>
-          <span className="font-semibold">{Math.round(recall * 100)}%</span>
+          <span className="text-gray-700 dark:text-gray-300">Ανάκληση:</span>
+          <span className="font-semibold text-gray-900 dark:text-white">{Math.round(recall * 100)}%</span>
         </div>
-        <div className="w-full bg-gray-200 rounded-full h-2">
+        <div className="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2">
           <div 
-            className="bg-green-600 h-2 rounded-full" 
+            className="bg-green-600 dark:bg-green-500 h-2 rounded-full" 
             style={{ width: `${Math.round(recall * 100)}%` }}
           ></div>
         </div>
@@ -83,14 +83,14 @@ const AnnotationResult: React.FC<AnnotationResultProps> = ({
       
       <div className="mb-8">
         <div className="flex justify-between items-center mb-2">
-          <span className="text-gray-700">Συνολική Βαθμολογία (F1):</span>
-          <span className="font-semibold">{scorePercentage}%</span>
+          <span className="text-gray-700 dark:text-gray-300">Συνολική Βαθμολογία (F1):</span>
+          <span className="font-semibold text-gray-900 dark:text-white">{scorePercentage}%</span>
         </div>
-        <div className="w-full bg-gray-200 rounded-full h-2">
+        <div className="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2">
           <div 
             className={`h-2 rounded-full ${
-              scorePercentage >= 80 ? 'bg-green-600' : 
-              scorePercentage >= 50 ? 'bg-yellow-500' : 'bg-red-500'
+              scorePercentage >= 80 ? 'bg-green-600 dark:bg-green-500' : 
+              scorePercentage >= 50 ? 'bg-yellow-500 dark:bg-yellow-400' : 'bg-red-500 dark:bg-red-400'
             }`} 
             style={{ width: `${scorePercentage}%` }}
           ></div>
@@ -99,8 +99,8 @@ const AnnotationResult: React.FC<AnnotationResultProps> = ({
       
       {missingAnnotations.length > 0 && (
         <div className="mb-6">
-          <h4 className="font-semibold text-red-600 mb-2">Επισημάνσεις που λείπουν:</h4>
-          <ul className="list-disc list-inside space-y-1 text-gray-700">
+          <h4 className="font-semibold text-red-600 dark:text-red-400 mb-2">Επισημάνσεις που λείπουν:</h4>
+          <ul className="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300">
             {missingAnnotations.map((annotation, index) => {
               const category = piiCategories.find(c => c.id === annotation.category);
               return (
@@ -115,8 +115,8 @@ const AnnotationResult: React.FC<AnnotationResultProps> = ({
       
       {incorrectAnnotations.length > 0 && (
         <div className="mb-6">
-          <h4 className="font-semibold text-red-600 mb-2">Λανθασμένες επισημάνσεις:</h4>
-          <ul className="list-disc list-inside space-y-1 text-gray-700">
+          <h4 className="font-semibold text-red-600 dark:text-red-400 mb-2">Λανθασμένες επισημάνσεις:</h4>
+          <ul className="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300">
             {incorrectAnnotations.map((annotation, index) => {
               const category = piiCategories.find(c => c.id === annotation.category);
               return (
@@ -130,8 +130,8 @@ const AnnotationResult: React.FC<AnnotationResultProps> = ({
       )}
       
       <div className="mt-8">
-        <h4 className="font-semibold mb-2">Συμβουλές για βελτίωση:</h4>
-        <ul className="list-disc list-inside space-y-1 text-gray-700">
+        <h4 className="font-semibold mb-2 text-gray-900 dark:text-white">Συμβουλές για βελτίωση:</h4>
+        <ul className="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300">
           {scorePercentage < 100 && (
             <>
               {precision < 1 && (
@@ -146,13 +146,13 @@ const AnnotationResult: React.FC<AnnotationResultProps> = ({
             </>
           )}
           {scorePercentage === 100 && (
-            <li className="text-green-600">Εξαιρετική δουλειά! Εντοπίσατε και επισημάνατε σωστά όλες τις PII!</li>
+            <li className="text-green-600 dark:text-green-400">Εξαιρετική δουλειά! Εντοπίσατε και επισημάνατε σωστά όλες τις PII!</li>
           )}
         </ul>
       </div>
       
       <button 
-        className="mt-6 bg-blue-600 text-white py-2 px-6 rounded hover:bg-blue-700 transition-colors w-full"
+        className="mt-6 bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white py-2 px-6 rounded transition-colors w-full"
         onClick={onReset}
       >
         Δοκιμάστε Ξανά

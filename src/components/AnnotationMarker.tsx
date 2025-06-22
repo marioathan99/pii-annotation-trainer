@@ -92,18 +92,22 @@ const AnnotationMarker: React.FC<AnnotationMarkerProps> = ({
 
     // Έλεγχος για επικαλυπτόμενες επισημάνσεις
     for (let i = 1; i < sortedAnnotations.length; i++) {
-      if (sortedAnnotations[i].start < sortedAnnotations[i - 1].end) {
+      const current = sortedAnnotations[i];
+      const previous = sortedAnnotations[i - 1];
+      
+      // Έλεγχος για πραγματική επικάλυψη: η τρέχουσα αρχίζει πριν τελειώσει η προηγούμενη
+      if (current.start < previous.end && current.start !== previous.end) {
         return (
-          <div className="bg-gradient-to-r from-red-50 to-pink-50 border-2 border-red-300 rounded-xl p-6 text-center">
+          <div className="bg-gradient-to-r from-red-50 to-pink-50 dark:from-red-900/20 dark:to-pink-900/20 border-2 border-red-300 dark:border-red-600 rounded-xl p-6 text-center">
             <div className="flex items-center justify-center mb-3">
               <div className="p-2 rounded-lg bg-red-500 text-white mr-3">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
                 </svg>
               </div>
-              <h4 className="text-lg font-bold text-red-800">Σφάλμα Επισημάνσεων</h4>
+              <h4 className="text-lg font-bold text-red-800 dark:text-red-200">Σφάλμα Επισημάνσεων</h4>
             </div>
-            <p className="text-red-700 leading-relaxed">
+            <p className="text-red-700 dark:text-red-300 leading-relaxed">
               Υπάρχουν επικαλυπτόμενες επισημάνσεις. Παρακαλώ αφαιρέστε μία από αυτές πριν συνεχίσετε.
             </p>
           </div>

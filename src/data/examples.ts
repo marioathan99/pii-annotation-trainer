@@ -870,25 +870,311 @@ export const practiceExercises: PracticeExercise[] = [
   },
   {
     id: '20',
-    text: 'Η συσκευή μου έχει unique device ID ABC123-DEF456 και συνδέεται στο δίκτυο με MAC address 00:1B:63:84:45:E6. Έχω λάβει μήνυμα στο τηλέφωνο εργασίας 2109876543.',
+    text: 'Η συσκευή μου έχει unique device ID 40A2298A-DA14-4B70-9A35-01C21371154F και συνδέεται στο δίκτυο με MAC address 00:1B:63:84:45:E6. Έχω λάβει μήνυμα στο τηλέφωνο εργασίας 2109876543.',
     correctAnnotations: [
       {
-        text: 'ABC123-DEF456',
+        text: '40A2298A-DA14-4B70-9A35-01C21371154F',
         category: 'uniqueDeviceIdentifier',
         start: 36,
-        end: 49
+        end: 72
       },
       {
         text: '00:1B:63:84:45:E6',
         category: 'macAddress',
-        start: 90,
-        end: 107
+        start: 113,
+        end: 130
       },
       {
         text: '2109876543',
         category: 'phoneNonPersonal',
-        start: 148,
-        end: 158
+        start: 171,
+        end: 181
+      }
+    ],
+    difficulty: 'hard'
+  },
+  {
+    id: '21',
+    text: 'Ο Mr. Smith είναι CEO και το παρατσούκλι του είναι "Big Jim". Το μεσαίο του όνομα είναι Alexander.',
+    correctAnnotations: [
+      {
+        text: 'Mr. Smith',
+        category: 'namePartial',
+        start: 2,
+        end: 11
+      },
+      {
+        text: 'Big Jim',
+        category: 'nickname',
+        start: 53,
+        end: 60
+      },
+      {
+        text: 'Alexander',
+        category: 'middleName',
+        start: 95,
+        end: 104
+      }
+    ],
+    difficulty: 'medium'
+  },
+  {
+    id: '22',
+    text: 'Η κάρτα μου έχει CVC 123 και αριθμό 4003448271155855. Το IBAN μου είναι GR1601101250000000012300695.',
+    correctAnnotations: [
+      {
+        text: '123',
+        category: 'cvc',
+        start: 21,
+        end: 24
+      },
+      {
+        text: '4003448271155855',
+        category: 'bankPaymentCardNumber',
+        start: 37,
+        end: 53
+      },
+      {
+        text: 'GR1601101250000000012300695',
+        category: 'ibanCode',
+        start: 72,
+        end: 99
+      }
+    ],
+    difficulty: 'easy'
+  },
+  {
+    id: '23',
+    text: 'Η πινακίδα του αυτοκινήτου μου είναι ΑΒΓ-1234 και το VIN είναι 1HGBH41JXMN109186. Είναι ένα BMW X5 2020.',
+    correctAnnotations: [
+      {
+        text: 'ΑΒΓ-1234',
+        category: 'licensePlateNumber',
+        start: 41,
+        end: 49
+      },
+      {
+        text: '1HGBH41JXMN109186',
+        category: 'vin',
+        start: 65,
+        end: 82
+      },
+      {
+        text: 'BMW X5 2020',
+        category: 'vehicleIdentifiers',
+        start: 92,
+        end: 104
+      }
+    ],
+    difficulty: 'medium'
+  },
+  {
+    id: '24',
+    text: 'Το ΑΜΚΑ μου είναι 12345678901 και το ΑΦΜ είναι 123456789. Η άδεια οδήγησης έχει αριθμό ΑΧ1234567.',
+    correctAnnotations: [
+      {
+        text: '12345678901',
+        category: 'socialSecurityNumber',
+        start: 18,
+        end: 29
+      },
+      {
+        text: '123456789',
+        category: 'individualTaxId',
+        start: 44,
+        end: 53
+      },
+      {
+        text: 'ΑΧ1234567',
+        category: 'driversLicenseNumber',
+        start: 88,
+        end: 97
+      }
+    ],
+    difficulty: 'easy'
+  },
+  {
+    id: '25',
+    text: 'Έχω αρτηριακή πίεση 120/80 και ομάδα αίματος O+. Πήρα το εμβόλιο COVID και έχω προπονηθεί 45 λεπτά.',
+    correctAnnotations: [
+      {
+        text: '120/80',
+        category: 'healthInformation',
+        start: 20,
+        end: 26
+      },
+      {
+        text: 'ομάδα αίματος O+',
+        category: 'healthInformation',
+        start: 31,
+        end: 47
+      },
+      {
+        text: 'εμβόλιο COVID',
+        category: 'healthInformation',
+        start: 59,
+        end: 72
+      },
+      {
+        text: 'προπονηθεί 45 λεπτά',
+        category: 'calculatedFitnessData',
+        start: 81,
+        end: 100
+      }
+    ],
+    difficulty: 'hard'
+  },
+  {
+    id: '26',
+    text: 'Είμαι εργένης, 25 ετών και απόφοιτος MIT. Έχω γεννηθεί στην Αθήνα και είμαι Έλληνας.',
+    correctAnnotations: [
+      {
+        text: 'εργένης',
+        category: 'maritalRelationshipStatus',
+        start: 6,
+        end: 13
+      },
+      {
+        text: '25',
+        category: 'numericAge',
+        start: 15,
+        end: 17
+      },
+      {
+        text: 'απόφοιτος MIT',
+        category: 'educationalAffiliation',
+        start: 27,
+        end: 40
+      },
+      {
+        text: 'Αθήνα',
+        category: 'cityOfBirth',
+        start: 63,
+        end: 68
+      },
+      {
+        text: 'Έλληνας',
+        category: 'ethnicityOrRace',
+        start: 78,
+        end: 85
+      }
+    ],
+    difficulty: 'hard'
+  },
+  {
+    id: '27',
+    text: 'Είμαι πατέρας 2 παιδιών και παππούς ενός εγγονού. Φροντίζω τη μητέρα μου που είναι ηλικιωμένη.',
+    correctAnnotations: [
+      {
+        text: 'πατέρας 2 παιδιών',
+        category: 'parentalStatus',
+        start: 6,
+        end: 23
+      },
+      {
+        text: 'παππούς ενός εγγονού',
+        category: 'grandparentStatus',
+        start: 28,
+        end: 48
+      },
+      {
+        text: 'φροντίζω τη μητέρα μου',
+        category: 'caregiverStatus',
+        start: 50,
+        end: 72
+      },
+      {
+        text: 'ηλικιωμένη',
+        category: 'age',
+        start: 86,
+        end: 96
+      }
+    ],
+    difficulty: 'hard'
+  },
+  {
+    id: '28',
+    text: 'Είμαι μη δυαδικός, queer, και αγαπώ τη μουσική. Πιστεύω στο Βουδισμό και ψηφίζω αριστερά.',
+    correctAnnotations: [
+      {
+        text: 'μη δυαδικός',
+        category: 'genderExpansive',
+        start: 6,
+        end: 17
+      },
+      {
+        text: 'queer',
+        category: 'sexualInformation',
+        start: 19,
+        end: 24
+      },
+      {
+        text: 'αγαπώ τη μουσική',
+        category: 'personalInterest',
+        start: 30,
+        end: 46
+      },
+      {
+        text: 'Βουδισμό',
+        category: 'faithSpirituality',
+        start: 63,
+        end: 71
+      },
+      {
+        text: 'ψηφίζω αριστερά',
+        category: 'politics',
+        start: 76,
+        end: 91
+      }
+    ],
+    difficulty: 'hard'
+  },
+  {
+    id: '29',
+    text: 'Έχω πτυχίο στη φυσική και είμαι τελειόφοιτος λυκείου. Μιλάω ελληνικά ως μητρική γλώσσα.',
+    correctAnnotations: [
+      {
+        text: 'πτυχίο',
+        category: 'educationalAttainment',
+        start: 4,
+        end: 10
+      },
+      {
+        text: 'τελειόφοιτος λυκείου',
+        category: 'educationLevel',
+        start: 31,
+        end: 51
+      },
+      {
+        text: 'ελληνικά ως μητρική γλώσσα',
+        category: 'linguisticIdentity',
+        start: 60,
+        end: 86
+      }
+    ],
+    difficulty: 'medium'
+  },
+  {
+    id: '30',
+    text: 'Έχασα τον πατέρα μου πέρυσι και είμαι θύμα εγκλήματος. Υπηρέτησα στον στρατό ως λοχαγός.',
+    correctAnnotations: [
+      {
+        text: 'έχασα τον πατέρα μου',
+        category: 'tragedyHardship',
+        start: 0,
+        end: 20
+      },
+      {
+        text: 'θύμα εγκλήματος',
+        category: 'tragedyHardship',
+        start: 37,
+        end: 52
+      },
+      {
+        text: 'υπηρέτησα στον στρατό ως λοχαγός',
+        category: 'military',
+        start: 54,
+        end: 86
       }
     ],
     difficulty: 'hard'
