@@ -2,7 +2,7 @@
   "name": "pii-annotation-trainer",
   "version": "1.0.0",
   "description": "A modern PII annotation training application for Greek and English users",
-  "homepage": "https://YOUR_USERNAME.github.io/pii-annotation-trainer",
+  "homepage": "https://marioathan99.github.io/pii-annotation-trainer",
   "scripts": {
     "dev": "node scripts/build.mjs",
     "build": "node scripts/build.mjs --production",
