@@ -194,6 +194,32 @@ const Rules = () => {
               </div>
             </div>
           </div>
+
+          <div className="bg-gradient-to-r from-indigo-50 via-blue-50 to-cyan-50 dark:from-indigo-900/20 dark:via-blue-900/20 dark:to-cyan-900/20 border-2 border-indigo-200 dark:border-indigo-800 rounded-xl p-6">
+            <div className="flex items-start mb-4">
+              <div className="p-2 rounded-lg bg-gradient-to-r from-indigo-500 to-blue-600 text-white mr-4">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </div>
+              <div className="flex-1">
+                <h4 className="text-lg font-bold text-indigo-800 dark:text-indigo-300 mb-3">⚠️ ΣΗΜΑΝΤΙΚΟ: Δημόσια Πρόσωπα και Διάσημες Προσωπικότητες</h4>
+                <div className="space-y-3">
+                  <div className="bg-red-100 dark:bg-red-900/30 border border-red-300 dark:border-red-700 rounded-lg p-4">
+                    <p className="text-red-800 dark:text-red-300 font-semibold mb-2">ΕΠΙΣΗΜΑΙΝΟΝΤΑΙ ΠΑΝΤΑ:</p>
+                    <ul className="list-disc list-inside space-y-1 text-red-700 dark:text-red-300 ml-4">
+                      <li>Ονόματα πολιτικών: <mark className="bg-green-200 px-2 py-1 rounded">πρόεδρος Μπάιντεν</mark>, <mark className="bg-green-200 px-2 py-1 rounded">Ντόναλντ Τραμπ</mark></li>
+                      <li>Ονόματα διάσημων ηθοποιών, μουσικών: <mark className="bg-green-200 px-2 py-1 rounded">Mark Twain</mark></li>
+                      <li>Όλες οι μορφές ονομάτων δημοσίων προσώπων, ανεξαρτήτως αν είναι εν ζωή ή όχι</li>
+                    </ul>
+                  </div>
+                  <p className="text-gray-700 dark:text-gray-300 text-sm italic">
+                    Σύμφωνα με τις επίσημες οδηγίες: "Επισημαίνουμε όλες τις μορφές ονομάτων, ανεξαρτήτως αν πρόκειται για δημόσιο πρόσωπο"
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="flex items-center mb-6">
@@ -217,9 +243,9 @@ const Rules = () => {
                 <h4 className="text-lg font-bold text-yellow-800 dark:text-yellow-300 mb-3">Περιπτώσεις που ΔΕΝ Επισημαίνονται</h4>
                 <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 ml-4">
                   <li>Γενικές αναφορές χωρίς συγκεκριμένα προσωπικά στοιχεία</li>
-                  <li>Ονόματα διάσημων προσώπων που αναφέρονται ως δημόσια πρόσωπα (π.χ. πολιτικοί, ηθοποιοί)</li>
                   <li>Πληροφορίες για τρίτα πρόσωπα που δεν είναι αναγνωρίσιμα</li>
                   <li>Γενικές αναφορές σε ομάδες ανθρώπων (π.χ. "όλοι οι φοιτητές")</li>
+                  <li>Κενά στοιχεία ή placeholders (π.χ. "000-000-0000", "XXX@email.com")</li>
                 </ul>
               </div>
             </div>

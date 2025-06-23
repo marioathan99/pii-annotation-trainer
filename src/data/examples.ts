@@ -188,6 +188,25 @@ export const annotationExamples: AnnotationExample[] = [
       }
     ],
     explanation: 'Οι συντεταγμένες GPS επισημαίνονται ως ακριβής τοποθεσία. Ο IMEI αριθμός είναι αναγνωριστικό συσκευής.'
+  },
+  {
+    id: '11',
+    text: 'Σήμερα ο πρόεδρος Μπάιντεν ανακοίνωσε νέα μέτρα, ενώ ο Ντόναλντ Τραμπ σχολίασε την κατάσταση.',
+    annotations: [
+      {
+        text: 'πρόεδρος Μπάιντεν',
+        category: 'namePartial',
+        start: 10,
+        end: 26
+      },
+      {
+        text: 'Ντόναλντ Τραμπ',
+        category: 'fullName',
+        start: 56,
+        end: 70
+      }
+    ],
+    explanation: 'Όλα τα ονόματα δημοσίων προσώπων επισημαίνονται κανονικά. Ο "πρόεδρος Μπάιντεν" είναι μερικό όνομα, ενώ το "Ντόναλντ Τραμπ" είναι πλήρες όνομα.'
   }
 ];
 
@@ -1178,5 +1197,24 @@ export const practiceExercises: PracticeExercise[] = [
       }
     ],
     difficulty: 'hard'
+  },
+  {
+    id: '31',
+    text: 'Διάβασα ένα άρθρο για τον Κυριάκο Μητσοτάκη και τις δηλώσεις του Mark Zuckerberg σχετικά με την τεχνολογία AI.',
+    correctAnnotations: [
+      {
+        text: 'Κυριάκο Μητσοτάκη',
+        category: 'fullName',
+        start: 27,
+        end: 44
+      },
+      {
+        text: 'Mark Zuckerberg',
+        category: 'fullName',
+        start: 65,
+        end: 80
+      }
+    ],
+    difficulty: 'easy'
   }
 ];

@@ -28212,6 +28212,31 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
               /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", { children: "\u0393\u03B9\u03B1 \u03B9\u03B1\u03C4\u03C1\u03B9\u03BA\u03AD\u03C2 \u03C0\u03BB\u03B7\u03C1\u03BF\u03C6\u03BF\u03C1\u03AF\u03B5\u03C2, \u03C3\u03C5\u03BC\u03C0\u03B5\u03C1\u03B9\u03BB\u03AC\u03B2\u03B5\u03C4\u03B5 \u03C4\u03B7 \u03C3\u03C5\u03B3\u03BA\u03B5\u03BA\u03C1\u03B9\u03BC\u03AD\u03BD\u03B7 \u03BA\u03B1\u03C4\u03AC\u03C3\u03C4\u03B1\u03C3\u03B7 \u03AE \u03B8\u03B5\u03C1\u03B1\u03C0\u03B5\u03AF\u03B1" })
             ] })
           ] })
+        ] }) }),
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("div", { className: "bg-gradient-to-r from-indigo-50 via-blue-50 to-cyan-50 dark:from-indigo-900/20 dark:via-blue-900/20 dark:to-cyan-900/20 border-2 border-indigo-200 dark:border-indigo-800 rounded-xl p-6", children: /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("div", { className: "flex items-start mb-4", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("div", { className: "p-2 rounded-lg bg-gradient-to-r from-indigo-500 to-blue-600 text-white mr-4", children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("svg", { className: "w-5 h-5", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" }) }) }),
+          /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("div", { className: "flex-1", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("h4", { className: "text-lg font-bold text-indigo-800 dark:text-indigo-300 mb-3", children: "\u26A0\uFE0F \u03A3\u0397\u039C\u0391\u039D\u03A4\u0399\u039A\u039F: \u0394\u03B7\u03BC\u03CC\u03C3\u03B9\u03B1 \u03A0\u03C1\u03CC\u03C3\u03C9\u03C0\u03B1 \u03BA\u03B1\u03B9 \u0394\u03B9\u03AC\u03C3\u03B7\u03BC\u03B5\u03C2 \u03A0\u03C1\u03BF\u03C3\u03C9\u03C0\u03B9\u03BA\u03CC\u03C4\u03B7\u03C4\u03B5\u03C2" }),
+            /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("div", { className: "space-y-3", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("div", { className: "bg-red-100 dark:bg-red-900/30 border border-red-300 dark:border-red-700 rounded-lg p-4", children: [
+                /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("p", { className: "text-red-800 dark:text-red-300 font-semibold mb-2", children: "\u0395\u03A0\u0399\u03A3\u0397\u039C\u0391\u0399\u039D\u039F\u039D\u03A4\u0391\u0399 \u03A0\u0391\u039D\u03A4\u0391:" }),
+                /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("ul", { className: "list-disc list-inside space-y-1 text-red-700 dark:text-red-300 ml-4", children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("li", { children: [
+                    "\u039F\u03BD\u03CC\u03BC\u03B1\u03C4\u03B1 \u03C0\u03BF\u03BB\u03B9\u03C4\u03B9\u03BA\u03CE\u03BD: ",
+                    /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("mark", { className: "bg-green-200 px-2 py-1 rounded", children: "\u03C0\u03C1\u03CC\u03B5\u03B4\u03C1\u03BF\u03C2 \u039C\u03C0\u03AC\u03B9\u03BD\u03C4\u03B5\u03BD" }),
+                    ", ",
+                    /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("mark", { className: "bg-green-200 px-2 py-1 rounded", children: "\u039D\u03C4\u03CC\u03BD\u03B1\u03BB\u03BD\u03C4 \u03A4\u03C1\u03B1\u03BC\u03C0" })
+                  ] }),
+                  /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("li", { children: [
+                    "\u039F\u03BD\u03CC\u03BC\u03B1\u03C4\u03B1 \u03B4\u03B9\u03AC\u03C3\u03B7\u03BC\u03C9\u03BD \u03B7\u03B8\u03BF\u03C0\u03BF\u03B9\u03CE\u03BD, \u03BC\u03BF\u03C5\u03C3\u03B9\u03BA\u03CE\u03BD: ",
+                    /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("mark", { className: "bg-green-200 px-2 py-1 rounded", children: "Mark Twain" })
+                  ] }),
+                  /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", { children: "\u038C\u03BB\u03B5\u03C2 \u03BF\u03B9 \u03BC\u03BF\u03C1\u03C6\u03AD\u03C2 \u03BF\u03BD\u03BF\u03BC\u03AC\u03C4\u03C9\u03BD \u03B4\u03B7\u03BC\u03BF\u03C3\u03AF\u03C9\u03BD \u03C0\u03C1\u03BF\u03C3\u03CE\u03C0\u03C9\u03BD, \u03B1\u03BD\u03B5\u03BE\u03B1\u03C1\u03C4\u03AE\u03C4\u03C9\u03C2 \u03B1\u03BD \u03B5\u03AF\u03BD\u03B1\u03B9 \u03B5\u03BD \u03B6\u03C9\u03AE \u03AE \u03CC\u03C7\u03B9" })
+                ] })
+              ] }),
+              /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("p", { className: "text-gray-700 dark:text-gray-300 text-sm italic", children: '\u03A3\u03CD\u03BC\u03C6\u03C9\u03BD\u03B1 \u03BC\u03B5 \u03C4\u03B9\u03C2 \u03B5\u03C0\u03AF\u03C3\u03B7\u03BC\u03B5\u03C2 \u03BF\u03B4\u03B7\u03B3\u03AF\u03B5\u03C2: "\u0395\u03C0\u03B9\u03C3\u03B7\u03BC\u03B1\u03AF\u03BD\u03BF\u03C5\u03BC\u03B5 \u03CC\u03BB\u03B5\u03C2 \u03C4\u03B9\u03C2 \u03BC\u03BF\u03C1\u03C6\u03AD\u03C2 \u03BF\u03BD\u03BF\u03BC\u03AC\u03C4\u03C9\u03BD, \u03B1\u03BD\u03B5\u03BE\u03B1\u03C1\u03C4\u03AE\u03C4\u03C9\u03C2 \u03B1\u03BD \u03C0\u03C1\u03CC\u03BA\u03B5\u03B9\u03C4\u03B1\u03B9 \u03B3\u03B9\u03B1 \u03B4\u03B7\u03BC\u03CC\u03C3\u03B9\u03BF \u03C0\u03C1\u03CC\u03C3\u03C9\u03C0\u03BF"' })
+            ] })
+          ] })
         ] }) })
       ] }),
       /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("div", { className: "flex items-center mb-6", children: [
@@ -28225,9 +28250,9 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
             /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("h4", { className: "text-lg font-bold text-yellow-800 dark:text-yellow-300 mb-3", children: "\u03A0\u03B5\u03C1\u03B9\u03C0\u03C4\u03CE\u03C3\u03B5\u03B9\u03C2 \u03C0\u03BF\u03C5 \u0394\u0395\u039D \u0395\u03C0\u03B9\u03C3\u03B7\u03BC\u03B1\u03AF\u03BD\u03BF\u03BD\u03C4\u03B1\u03B9" }),
             /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("ul", { className: "list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 ml-4", children: [
               /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", { children: "\u0393\u03B5\u03BD\u03B9\u03BA\u03AD\u03C2 \u03B1\u03BD\u03B1\u03C6\u03BF\u03C1\u03AD\u03C2 \u03C7\u03C9\u03C1\u03AF\u03C2 \u03C3\u03C5\u03B3\u03BA\u03B5\u03BA\u03C1\u03B9\u03BC\u03AD\u03BD\u03B1 \u03C0\u03C1\u03BF\u03C3\u03C9\u03C0\u03B9\u03BA\u03AC \u03C3\u03C4\u03BF\u03B9\u03C7\u03B5\u03AF\u03B1" }),
-              /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", { children: "\u039F\u03BD\u03CC\u03BC\u03B1\u03C4\u03B1 \u03B4\u03B9\u03AC\u03C3\u03B7\u03BC\u03C9\u03BD \u03C0\u03C1\u03BF\u03C3\u03CE\u03C0\u03C9\u03BD \u03C0\u03BF\u03C5 \u03B1\u03BD\u03B1\u03C6\u03AD\u03C1\u03BF\u03BD\u03C4\u03B1\u03B9 \u03C9\u03C2 \u03B4\u03B7\u03BC\u03CC\u03C3\u03B9\u03B1 \u03C0\u03C1\u03CC\u03C3\u03C9\u03C0\u03B1 (\u03C0.\u03C7. \u03C0\u03BF\u03BB\u03B9\u03C4\u03B9\u03BA\u03BF\u03AF, \u03B7\u03B8\u03BF\u03C0\u03BF\u03B9\u03BF\u03AF)" }),
               /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", { children: "\u03A0\u03BB\u03B7\u03C1\u03BF\u03C6\u03BF\u03C1\u03AF\u03B5\u03C2 \u03B3\u03B9\u03B1 \u03C4\u03C1\u03AF\u03C4\u03B1 \u03C0\u03C1\u03CC\u03C3\u03C9\u03C0\u03B1 \u03C0\u03BF\u03C5 \u03B4\u03B5\u03BD \u03B5\u03AF\u03BD\u03B1\u03B9 \u03B1\u03BD\u03B1\u03B3\u03BD\u03C9\u03C1\u03AF\u03C3\u03B9\u03BC\u03B1" }),
-              /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", { children: '\u0393\u03B5\u03BD\u03B9\u03BA\u03AD\u03C2 \u03B1\u03BD\u03B1\u03C6\u03BF\u03C1\u03AD\u03C2 \u03C3\u03B5 \u03BF\u03BC\u03AC\u03B4\u03B5\u03C2 \u03B1\u03BD\u03B8\u03C1\u03CE\u03C0\u03C9\u03BD (\u03C0.\u03C7. "\u03CC\u03BB\u03BF\u03B9 \u03BF\u03B9 \u03C6\u03BF\u03B9\u03C4\u03B7\u03C4\u03AD\u03C2")' })
+              /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", { children: '\u0393\u03B5\u03BD\u03B9\u03BA\u03AD\u03C2 \u03B1\u03BD\u03B1\u03C6\u03BF\u03C1\u03AD\u03C2 \u03C3\u03B5 \u03BF\u03BC\u03AC\u03B4\u03B5\u03C2 \u03B1\u03BD\u03B8\u03C1\u03CE\u03C0\u03C9\u03BD (\u03C0.\u03C7. "\u03CC\u03BB\u03BF\u03B9 \u03BF\u03B9 \u03C6\u03BF\u03B9\u03C4\u03B7\u03C4\u03AD\u03C2")' }),
+              /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", { children: '\u039A\u03B5\u03BD\u03AC \u03C3\u03C4\u03BF\u03B9\u03C7\u03B5\u03AF\u03B1 \u03AE placeholders (\u03C0.\u03C7. "000-000-0000", "XXX@email.com")' })
             ] })
           ] })
         ] }) }),
@@ -29144,6 +29169,25 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         }
       ],
       explanation: "\u039F\u03B9 \u03C3\u03C5\u03BD\u03C4\u03B5\u03C4\u03B1\u03B3\u03BC\u03AD\u03BD\u03B5\u03C2 GPS \u03B5\u03C0\u03B9\u03C3\u03B7\u03BC\u03B1\u03AF\u03BD\u03BF\u03BD\u03C4\u03B1\u03B9 \u03C9\u03C2 \u03B1\u03BA\u03C1\u03B9\u03B2\u03AE\u03C2 \u03C4\u03BF\u03C0\u03BF\u03B8\u03B5\u03C3\u03AF\u03B1. \u039F IMEI \u03B1\u03C1\u03B9\u03B8\u03BC\u03CC\u03C2 \u03B5\u03AF\u03BD\u03B1\u03B9 \u03B1\u03BD\u03B1\u03B3\u03BD\u03C9\u03C1\u03B9\u03C3\u03C4\u03B9\u03BA\u03CC \u03C3\u03C5\u03C3\u03BA\u03B5\u03C5\u03AE\u03C2."
+    },
+    {
+      id: "11",
+      text: "\u03A3\u03AE\u03BC\u03B5\u03C1\u03B1 \u03BF \u03C0\u03C1\u03CC\u03B5\u03B4\u03C1\u03BF\u03C2 \u039C\u03C0\u03AC\u03B9\u03BD\u03C4\u03B5\u03BD \u03B1\u03BD\u03B1\u03BA\u03BF\u03AF\u03BD\u03C9\u03C3\u03B5 \u03BD\u03AD\u03B1 \u03BC\u03AD\u03C4\u03C1\u03B1, \u03B5\u03BD\u03CE \u03BF \u039D\u03C4\u03CC\u03BD\u03B1\u03BB\u03BD\u03C4 \u03A4\u03C1\u03B1\u03BC\u03C0 \u03C3\u03C7\u03BF\u03BB\u03AF\u03B1\u03C3\u03B5 \u03C4\u03B7\u03BD \u03BA\u03B1\u03C4\u03AC\u03C3\u03C4\u03B1\u03C3\u03B7.",
+      annotations: [
+        {
+          text: "\u03C0\u03C1\u03CC\u03B5\u03B4\u03C1\u03BF\u03C2 \u039C\u03C0\u03AC\u03B9\u03BD\u03C4\u03B5\u03BD",
+          category: "namePartial",
+          start: 10,
+          end: 26
+        },
+        {
+          text: "\u039D\u03C4\u03CC\u03BD\u03B1\u03BB\u03BD\u03C4 \u03A4\u03C1\u03B1\u03BC\u03C0",
+          category: "fullName",
+          start: 56,
+          end: 70
+        }
+      ],
+      explanation: '\u038C\u03BB\u03B1 \u03C4\u03B1 \u03BF\u03BD\u03CC\u03BC\u03B1\u03C4\u03B1 \u03B4\u03B7\u03BC\u03BF\u03C3\u03AF\u03C9\u03BD \u03C0\u03C1\u03BF\u03C3\u03CE\u03C0\u03C9\u03BD \u03B5\u03C0\u03B9\u03C3\u03B7\u03BC\u03B1\u03AF\u03BD\u03BF\u03BD\u03C4\u03B1\u03B9 \u03BA\u03B1\u03BD\u03BF\u03BD\u03B9\u03BA\u03AC. \u039F "\u03C0\u03C1\u03CC\u03B5\u03B4\u03C1\u03BF\u03C2 \u039C\u03C0\u03AC\u03B9\u03BD\u03C4\u03B5\u03BD" \u03B5\u03AF\u03BD\u03B1\u03B9 \u03BC\u03B5\u03C1\u03B9\u03BA\u03CC \u03CC\u03BD\u03BF\u03BC\u03B1, \u03B5\u03BD\u03CE \u03C4\u03BF "\u039D\u03C4\u03CC\u03BD\u03B1\u03BB\u03BD\u03C4 \u03A4\u03C1\u03B1\u03BC\u03C0" \u03B5\u03AF\u03BD\u03B1\u03B9 \u03C0\u03BB\u03AE\u03C1\u03B5\u03C2 \u03CC\u03BD\u03BF\u03BC\u03B1.'
     }
   ];
   var practiceExercises = [
@@ -30130,6 +30174,25 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         }
       ],
       difficulty: "hard"
+    },
+    {
+      id: "31",
+      text: "\u0394\u03B9\u03AC\u03B2\u03B1\u03C3\u03B1 \u03AD\u03BD\u03B1 \u03AC\u03C1\u03B8\u03C1\u03BF \u03B3\u03B9\u03B1 \u03C4\u03BF\u03BD \u039A\u03C5\u03C1\u03B9\u03AC\u03BA\u03BF \u039C\u03B7\u03C4\u03C3\u03BF\u03C4\u03AC\u03BA\u03B7 \u03BA\u03B1\u03B9 \u03C4\u03B9\u03C2 \u03B4\u03B7\u03BB\u03CE\u03C3\u03B5\u03B9\u03C2 \u03C4\u03BF\u03C5 Mark Zuckerberg \u03C3\u03C7\u03B5\u03C4\u03B9\u03BA\u03AC \u03BC\u03B5 \u03C4\u03B7\u03BD \u03C4\u03B5\u03C7\u03BD\u03BF\u03BB\u03BF\u03B3\u03AF\u03B1 AI.",
+      correctAnnotations: [
+        {
+          text: "\u039A\u03C5\u03C1\u03B9\u03AC\u03BA\u03BF \u039C\u03B7\u03C4\u03C3\u03BF\u03C4\u03AC\u03BA\u03B7",
+          category: "fullName",
+          start: 27,
+          end: 44
+        },
+        {
+          text: "Mark Zuckerberg",
+          category: "fullName",
+          start: 65,
+          end: 80
+        }
+      ],
+      difficulty: "easy"
     }
   ];
 
